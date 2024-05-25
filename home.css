@@ -7,9 +7,8 @@
 }
 
 .container{
-    max-width: ;width: 90%;
+    max-width: 90%;
     margin: 0 auto;
-    background-color: green;
 }
 header{
     display: flex;
@@ -89,6 +88,7 @@ nav .operations .search_icon{
     align-items: center;
     gap: 95px;
     padding: var(--primary_padding);
+    margin-top: 70px;
 }
 .general_description{
     display: flex;
@@ -168,6 +168,7 @@ nav .operations .search_icon{
     .primary_banner{
         flex-direction: column;
         gap: 15px;
+        margin-top: 17px;
     }
     .general_description{
         gap: 18px;
@@ -186,7 +187,7 @@ nav .operations .search_icon{
         text-align: center;
     }
     .buttons{
-        gap: 29px;
+        gap: 17px;
     }
     .buttons button{
         height: 25px;
