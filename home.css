@@ -1,0 +1,204 @@
+@import "./reset.css";
+:root{
+    --primary_font_family: Hope Sans;
+    --primary_text_color: #797873;
+    --primary_color: #D6E800;
+    --primary_padding: 0 20px 0 20px;
+}
+
+.container{
+    max-width: ;width: 90%;
+    margin: 0 auto;
+    background-color: green;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+    padding: var(--primary_padding);
+}
+
+.hamburger{
+    height: 14px;
+    width: 14px;
+    display: none;
+    cursor: pointer;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.logo .book_icon{
+    height: 44px;
+    width: 44px;
+}
+.logo h1{
+    font-family: var(--primary_font_family);
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+}
+
+nav .operations{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+nav .operations li{
+    font-family: var(--primary_font_family);
+    font-size: 23.75px;
+    font-weight: 400;
+    line-height: 23.75px;
+    cursor: pointer;
+}
+nav .operations .search_icon{
+    width: 48px;
+    height: 48px;
+}
+
+.language_options{
+    height: 35px;
+    width: 136px;
+    background-color: var(--primary_color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: default;
+}
+.language_options span{
+    font-family: var(--primary_font_family);
+    font-size: 14.06px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    
+}
+.language_options .flag_icon{
+    height: 25px;
+    width: 25px;
+}
+.primary_banner{
+    display: flex;
+    align-items: center;
+    gap: 95px;
+    padding: var(--primary_padding);
+}
+.general_description{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.general_description h2{
+    font-family: var(--primary_font_family);
+    font-size: 57.82px;
+    font-weight: 600;
+    line-height: 59px;
+    text-align: left;
+    max-width: 613px;
+}
+.general_description p{
+    font-family: var(--primary_font_family);
+    font-size: 27.74px;
+    font-weight: 400;
+    line-height: 28.3px;
+    text-align: left;
+    color: var(--primary_text_color);
+    max-width: 505px;
+}
+.buttons{
+    display: flex;
+    gap: 60px;
+}
+.buttons button{
+    width: 220px;
+    height: 92px;
+    font-family: var(--primary_font_family);
+    font-size: 33.81px;
+    font-weight: 600;
+    line-height: 34.5px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttons .discover{
+    background-color: var(--primary_color);
+    border: none;
+}
+.buttons .read{
+    border: solid 2px #000;
+}
+
+.primary_banner_img{
+    width: 877px;
+    height: 507px;
+}
+@media screen and (max-width: 567px){
+    nav, .language_options span{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .language_options{
+        background-color: transparent;
+        width: auto;
+    }
+    .logo .book_icon{
+        height: 18px;
+        width: 18px;
+    }
+    .logo h1{
+        font-family: var(--primary_font_family);
+        font-size: 17px;;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+    }
+    header{
+        margin-top: 17px;
+    }
+
+    .primary_banner{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .general_description{
+        gap: 18px;
+        order: 1;
+    }
+    .general_description h2{
+        max-width: 150px;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+    }
+    .general_description p{
+        max-width: 130px;
+        font-size: 6px;
+        line-height: 6px;
+        text-align: center;
+    }
+    .buttons{
+        gap: 29px;
+    }
+    .buttons button{
+        height: 25px;
+        width: 61px;
+        font-size: 9px;
+        line-height: 9px;
+    }
+    .primary_banner_img{
+        width: 255px;
+        height: 128px;
+    }
+    .buttons .read{
+        border: solid 1.4px;
+    }
+}
