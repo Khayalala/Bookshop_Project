@@ -1,2 +1,2 @@
 # Bookshop_Project
-Preview Link: https://stupendous-kitten-552a3d.netlify.app/ 
+Preview Link: https://khayala-book-store.netlify.app/ 
