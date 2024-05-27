@@ -256,6 +256,101 @@ nav .operations .search_icon{
     border-radius: 20px;
 }
 
+footer{
+    background-color: #1B1C1E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+    height: 419px;
+    justify-content: center;
+    gap: 100px;
+    width: 100vw;
+}
+.footer_info{
+    display: flex;
+    border-bottom: solid 4px #D9D9D9;
+    gap: 195px;
+    align-items: start;
+}
+.footer_logo{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--primary_font_family);
+    font-weight: 400;
+    text-align: left;
+    color: #fff;
+}
+.footer_logo span:first-child{
+    font-size: 49px;
+    line-height: 50px;
+}
+.footer_logo span:nth-child(2){
+    font-size: 23.54px;
+    line-height: 24.02px;
+}
+
+.footer_list{
+    display: flex;
+    gap: 75px;
+}
+.footer_list_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--primary_font_family);
+    font-size: 15.96px;
+    font-weight: 400;
+    line-height: 32.91px;
+    text-align: center;
+    color: #fff;
+}
+.footer_list_items li{
+    cursor: pointer;
+}
+.location{
+    display: flex;
+    gap: 3px;
+}
+.location_icon{
+    height: 34px;
+    width: 24px;
+}
+.location span{
+    font-family: var(--primary_font_family);
+    font-size: 14.8px;
+    font-weight: 700;
+    line-height: 30.52px;
+    text-align: left;
+    color: #fff;
+}
+
+.footer_SM_credits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Social_Media{
+    display: flex;
+    gap: 15px;
+}
+.SM_icons{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 2px;
+    display: flex;
+}
+.footer_SM_credits span{
+    font-family: var(--primary_font_family);
+    font-size: 15.96px;
+    font-weight: 400;
+    line-height: 32.91px;
+    text-align: center;
+    color: #fff;
+}
+
 @media screen and (max-width: 768px){
     .container{
         align-items: center;
@@ -283,7 +378,7 @@ nav .operations .search_icon{
     }
     header{
         margin-top: 17px;
-        min-width: 297px;
+        gap: 50px;
     }
 
     .primary_banner{
@@ -399,5 +494,56 @@ nav .operations .search_icon{
         width: 233px;
         height: 161px;
         border-radius: 7px;
+    }
+
+    footer{
+        margin-top: 10px;
+        height: 89px;
+        gap: 20px;
+    }
+    .footer_info{
+        border-bottom: solid 1px #D9D9D9;
+        gap: 41px;
+    }
+    .footer_logo span:first-child{
+        font-size: 11px;
+        line-height: 11px;
+    }
+    .footer_logo span:nth-child(2){
+        font-size: 5px;
+        line-height: 5.09px;
+    }
+    .footer_list{
+        gap: 15px;
+    }
+    .footer_list_items{
+        font-size: 4px;
+        line-height: 7px;
+    }
+    
+    .location{
+        gap: 1px;
+        align-items: center;
+        justify-content: center;
+    }
+    .location_icon{
+        height: 7px;
+        width: 7px;
+    }
+    .location span{
+        font-size: 4px;
+        line-height: 1px;
+    }
+    .Social_Media{
+        gap: 5px;
+    }
+    .SM_icons{
+        height: 7.5px;
+        width: 7.5px;
+        padding: 1px;
+    }
+    .footer_SM_credits span{
+        font-size: 3.5px;
+        line-height: 7px;
     }
 }
